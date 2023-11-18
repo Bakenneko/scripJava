@@ -1,6 +1,3 @@
-
-const prompt = require('prompt-sync')();
-const script = require('./');
 const value = prompt("Enter name product").toLowerCase();
 let cost;
 switch (value) {
