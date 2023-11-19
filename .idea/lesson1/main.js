@@ -2,10 +2,9 @@
 // let red = arr.reduce((summ, item)=> summ+item);
 // console.log(red);
 
-let arr = [12,21,33,41,55,61];
-
-let summ = arr.reduce((sum, item) => sum+item) / arr.length;
-console.log(summ);
+// let arr = [12,21,33,41,55,61];
+// let summ = arr.reduce((sum, item) => sum+item) / arr.length;
+// console.log(summ);
 
 // const fruits = [
 //     { id: 0, name: "Яблуко" },
@@ -130,3 +129,126 @@ console.log(summ);
 // console.log(arr.includes("f"));
 // console.log(arr.lastIndexOf("f",5));
 
+// function showMessage (name, city){
+//     console.log("Hello, my name is " + name + " I'm from " + city);
+// }
+// showMessage("Andrew","Lviv");
+// showMessage("Oleg","Kyiv");
+
+// const sayHi = function (){
+//     console.log("Hi");
+// };
+// sayHi();
+
+// const userName = "Andrew";
+// const sayHi = function (){
+//     let message = "Hello, my name ";
+//     console.log(message+userName);
+// };
+// sayHi();
+
+//  function sum (a,b){
+//      return a+b;
+// };
+// let result = sum(3,5);
+// console.log(result);
+
+// const testFunct = function (a,b) {
+//     console.log("a :", a);
+//     console.log("b :", b);
+// };
+// testFunct(5,8);
+
+// const a = function () {
+//     c();
+//     console.log("function a");
+//     b();
+// };
+// const b = function () {
+//     console.log("function b");
+// };
+// const c = function () {
+//     console.log("function c");
+// };
+//
+// a();
+
+// const addName = function (){
+//     console.log(arguments);
+// };
+//
+// addName();
+
+// const addName = function (){
+//     const arg = Array.from(arguments);
+//     console.log(arguments);
+//     console.log(arg);
+// };
+// addName(1,3,5,6,7);
+
+// const addName = function (...arg){
+//     console.log(arg);
+// };
+// addName(1,3,5,6,7);
+// addName(1,345,51,656,71);
+
+// function ask(question, yes, no) {
+//     if (confirm(question)) {
+//         yes();
+//     } else {
+//         no();
+//     }
+// }
+// function showOk() {
+//     console.log("You say Ok");
+// }
+// function showCancel() {
+//     console.log("You say No");
+// }
+//
+// ask("Yes or No?", showOk,showCancel);
+
+// const hello = function (name) {
+//     console.log(`Hello, ${name}`);
+// };
+//
+// const searchName = function (callback) {
+//     const name = "Andrew";
+//     callback(name);
+// };
+//
+// searchName(hello);
+
+// function checkAge(age) {
+//     if (age > 18) {
+//         return console.log("Hello");
+//     }
+//     return console.log("Good bye");
+// }
+// checkAge(21);
+
+// const showMovie = (age) => {
+//     if (age > 21) {
+//         return console.log("Hello");
+//     }
+//     return console.log("Bye!");
+// }
+// showMovie(12);
+
+// console.log(document);
+// const addNumber = (number) => {
+//     let summ = Number(number) + 10;
+//     return console.log(summ);
+// }
+// const numberRef = document.querySelector
+// ('input[name="number"]');
+// const buttonRef = document.querySelector
+// ("button");
+// buttonRef.addEventListener("click", () => addNumber(numberRef.value));;
+// buttonRef.addEventListener("click", () => {
+//     console.log("click");
+// });
+
+// buttonRef.addEventListener("click", () => {
+//     console.log(numberRef.value);
+// });
