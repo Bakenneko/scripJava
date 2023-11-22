@@ -219,19 +219,36 @@
 // buttonRef.addEventListener("click", () => {
 //     console.log(numberRef.value);
 // });
-
-class Bank {
-    static type = "Privat";
-    constructor(options) {
-        this.summ = options.summ;
-        this.month = options.month;
-        this.p = options.p;
-    }
-    credit () {
-        return console.log(this.summ + this.p * this.month);
-    }
-}
-
+// class Bank {
+//     constructor(options) {
+//         this.summ = options.summ;
+//         this.month = options.month;
+//         this.p = options.p;
+//     }
+//     credit () {
+//         // return console.log(this.summ + this.p * this.month);
+//         return console.log("I am Privat");
+//     }
+// }
+//
+// class NewBank extends Bank {
+//     constructor(options) {
+//         super(options);
+//         this.card  = options.card;
+//     }
+//     credit() {
+//         super.credit();
+//         return console.log("I am Aval");
+//     }
+// }
+// const aval = new NewBank({
+//     summ: 30000,
+//     month: 5,
+//     p: 500,
+//     card: true,
+// });
+//
+// console.log(aval.credit());
 // const userBank = new Bank({
 //     summ: 30000,
 //     month: 5,
@@ -239,19 +256,80 @@ class Bank {
 // });
 //
 // userBank.credit();
-
-class NewBank extends Bank {
-    constructor(options) {
-        super(options);
-        this.card  = options.card;
-    }
-}
-const aval = new NewBank({
-    summ: 30000,
-    month: 5,
-    p: 500,
-    card: true,
-});
-
-console.log(aval.card);
-
+// class User {
+//     constructor(props) {
+//         this.name = props.name;
+//     }
+//
+//     firstName = "";
+//     lastName = "";
+//     age = "";
+//     city = "";
+//
+//     set name(newName){
+//         const  nameRow = newName.split(" ");
+//         this.firstName = nameRow[0];
+//         this.lastName = nameRow[1];
+//         this.age = nameRow[2];
+//         this.city = nameRow[3];
+//     }
+//     get name (){
+//         return ` First name: ${this.firstName} last name: ${this.lastName} age: ${this.age}`
+//     }
+// }
+//
+// const Andrew = new User ({
+//     name: "Andrew Kurylyk 34 Lviv",
+// });
+//
+// console.log(Andrew);
+// const a = [1, 2, 3];
+// console.log(a);
+// const a = {
+//     x: 1,
+//     y: 2,
+// };
+//
+// const b = Object.create(a);
+// console.log(b.x);
+// const Manager = function (name, sales) {
+//     this.name = name;
+//     this.sales = sales;
+// };
+//     // this.sales = function () {
+//     //     this.sales += 1;
+//     // }
+//
+// const ann = new Manager("Anna", 5);
+// const ivan = new Manager("Ivan", 10);
+// // console.log(ann.sales);
+// // ann.sales();
+// // console.log(ann.sales);
+//
+// Manager.prototype.sale = function () {
+//     this.sales += 1;
+// }
+//
+// console.log(ann.sales);
+// ann.sale();
+// console.log(ann.sales);
+//
+// console.dir(Manager);
+// class CoffMachine {
+//     _water = 0;
+//     #waterLimit = 500;
+//     constructor(power) {
+//         this.power = power;
+//     }
+//     set waterAmount(value){
+//         if (value < 0) {
+//             value = 0;
+//         }
+//         this._water = value;
+//     }
+// }
+//
+// let coffeeMachien = new CoffMachine(100);
+// // console.log(coffeeMachien);
+// coffeeMachien.waterAmount = 20;
+// console.log(coffeeMachien);
